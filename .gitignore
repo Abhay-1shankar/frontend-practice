@@ -1,0 +1,17 @@
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore VS Code settings
+.vscode/
+
+# Hidden Mac files
+._*
+
+# Build/output folders (if any)
+dist/
+build/
+
+# Log files
+*.log
+index.html

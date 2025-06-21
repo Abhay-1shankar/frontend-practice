@@ -1,0 +1,73 @@
+<!-- selectors(internal css) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>CSS selectors</title>
+     <style>
+          /* div{
+               background-color: red; 
+          } */
+
+          /* CLASS SELECTOR */
+          .k{
+               background-color: red;
+          }
+               /* ID SELECTOR */
+          #a{
+               background-color: green;
+
+          }
+               /* child selector */
+          div >p{
+               color: aqua;
+          }
+               /* descendent selector */
+          div p{
+               background-color: blueviolet;
+          }
+               /* universal selector */
+          *{
+               margin: 0;
+               
+          }
+
+          /* pseudo selector */
+          /* jaise agar koi link hai to uska jaise anchor tag pe */ 
+
+          a:visited{
+               color: blueviolet;
+          }
+
+          /* link for unvisited link color */
+          a:link{
+
+          }
+          /* jab hover krenge tab */
+          a:hover{
+
+          }
+          /* when clicking a link */
+          a:active{
+
+          }
+     </style>
+</head>
+<body>
+     <!-- agr sirf iska bg red karna hai to iska class define kardiye or dot class karke bg red krdo sirf isi ka hoga ya jiska bhi class k hoga uska hoga  -->
+     <div class="k">
+          I am a div
+          <p>
+               division ke andar ka paragraph hai jiska colour child selector se decide kiye.
+               background colour can also be decided.
+          </p>
+     </div>
+     <div id="a">
+         he is also a div
+<p>
+         <a href="https://www.google.com" target="_blank">OPEN GOOGLE</a></p>
+     </div>
+     
+</body>
+</html>

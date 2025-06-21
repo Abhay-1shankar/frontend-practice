@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>LAYOUT DESIGN</title>
+     <style>
+          
+          *{
+               margin: 0;
+               padding: 0;
+          }
+          body{
+               background-color: black;
+               box-sizing: border-box;
+               overflow-x: hidden;
+          }
+          .box{
+                width: 25vw;
+               height: 40vh;
+               display: inline-block;
+               margin: 5vw;
+               /* left: 250px; */
+               top: 100px;
+               z-index: 1;
+                
+
+
+          }
+           .box1{
+               background-color: purple;
+               width: 100vw;
+               height: 10vh;
+               position: sticky;
+               top: 0px;
+               z-index: 2;
+               
+           }
+           .box2{
+               background-color: aquamarine;
+               position: relative;
+              
+           }
+           .box3 {
+    background-color: rgb(233, 139, 8);
+    position: relative;
+     
+     }
+           .container{
+               border: 2px solid black;
+               text-align: center;
+               
+           }
+           .box5 {
+    background-color: bisque;
+    width: 60vw;
+    height: 30vh;
+    margin: 350px auto 0 auto;
+    display:flex ;               /* Enable flexbox */
+    justify-content: center;    /* Center horizontally */
+    align-items: center;        /* Center vertically */
+    position: relative;
+    top: 350px;
+    border-radius: 25px;
+    text-align: center;
+    padding: 1rem;              /* Optional: some space inside */
+}
+
+         .box4 {
+    background-color: green;
+    width: 90vw;
+    height: 75vh;
+    padding: 5px;
+    position: absolute;
+    /* position: absolute; Position it freely */
+    top: 14vh;           /* Push it just below the sticky header */
+    left: 5vw;           
+    z-index: 0;          /* Push it behind boxes 2 and 3 */
+    border-radius: 25px;
+}
+.cornor{
+    position: fixed;
+    bottom: 20px;  /* distance from bottom */
+    right: 20px;   /* distance from right */
+    z-index: 10;   /* ensure it's on top */
+    border-radius: 70%; /* optional: make it circular if not already */
+}
+
+.footer{
+     background-color: bisque;
+     border: 2px solid;
+
+}
+
+
+     </style>
+</head>
+<body>
+
+     <div class="container">
+            
+          <div class=" box1"></div>
+          <div class="box box2"></div>
+          <div class="box box3"></div>
+          <div class="box4"></div>
+          <div class="box5">WELCOME TO THE 1ST CONTENT OF MY OWN HANDWRITTEN WEBSITE, THIS IS JUST A LAYOUT MORE TO COME...</div>
+          <div>
+               <img src="https://static.vecteezy.com/system/resources/thumbnails/010/683/077/small_2x/circular-round-vintage-retro-steampunk-badge-emblem-label-stamp-logo-design-vector.jpg" alt="" width="100" class="cornor">
+          </div>
+
+          <footer>
+
+          </footer>
+     </div>
+     
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS FLEXBOXX</title>
+    <style>
+      .container {
+        border: 2px solid red;
+        display: flex;
+        /* to inc container height */
+        height: 80vh;
+        justify-content: center;
+        /* matlab ye horizontally centre karne ke liye use hua */
+        align-items: center;
+        /* or ye vertically centre me laane k liye use hua */
+
+        /* if more than one lines of content is there than use align content center */
+
+        /* FLEX PROPERTY APNNE HISAAB SE SET KIYA JA SAKTA HAI BY DEFAULT L TO R HOTA HAI */
+        flex-wrap: wrap;
+        /* flex-flow: column wrap; */
+        /* ye upar wala dekho direction and wrap dono ko ek sath set karne k liye use hota hai wrap is something you know */
+
+        flex-direction: row;
+        /* isko or explore kar sakte ho logical hai column reverse karenge to ulte direction me lau karna suru karega but colum me hi like phle 1234 to ab 4321  */
+
+        /* mainaxis jisme content lay hota h justify content center bhi isi ke acc work karta hai
+                cross axis uske perpendicular */
+
+        /* gap: 30px;
+                row-gap: ;
+                column-gap: ; */
+      }
+
+      .item {
+        height: 72px;
+        width: 72px;
+        border: 2px solid black;
+        /* margin:3px; */
+        background-color: blueviolet;
+        /* display:flex; */
+        /* item pe display flex nhi lagana hai lagana hai uske container pe */
+
+        /* SOME ITEM PROPERTIES WHICH CAN BE APPLIED ON THEM */
+      }
+      .order-1 {
+        order: 1;
+      }
+      .item1{
+        /* flex-grow: 2; */
+        /* matlab 2 item ki jagah lega agar 3 lkh diye to 3 times */
+        /* flex-shrink: 2; */
+        /* 
+                    align-self:; is also used for particular item to be targeted */
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="item item1"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item order-1">55</div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+      </div>
+    </main>
+  </body>
+</html>
