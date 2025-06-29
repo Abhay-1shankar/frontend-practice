@@ -4,24 +4,63 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>NETFLIX CLONE MAKING</title>
+    <title>Netflix India – Watch TV Shows Online, Watch Movies Online</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="main">
       <nav>
         <img width="100px" src="assets/images/logo.svg" alt="" />
-        <button>English</button>
-        <button>Sign IN</button>
+        <div class="right-btn">
+          <select name="lang" id="lang">
+            <option value="English">
+              <button class="btn btn-lang">English</button>
+            </option>
+            <option value="Hindi">
+              <button class="btn btn-lang">Hindi</button>
+            </option>
+          </select>
+          <button class="btn btn-sign">Sign IN</button>
+        </div>
+        <!-- <p><label for="email">Enter your email adress.</label></p>
+        <textarea name="email" id="email" rows="3" cols="15"></textarea> -->
       </nav>
 
       <div class="box"></div>
       <div class="para">
-             <span>Unlimited movies, TV shows and more</span>  
-             <span>Starts at ₹149. Cancel at any time.</span>  
-             <span>Ready to watch? Enter your email to create or restart your membership.
-</span>  
+        <span>Unlimited movies, TV shows and more</span>
+        <span>Starts at ₹149. Cancel at any time.</span>
+        <span
+          >Ready to watch? Enter your email to create or restart your
+          membership.
+        </span>
+        <div>
+          <input type="text" placeholder="Email address" />
+          <button class="btn btn-red">Get started &gt;</button>
+        </div>
       </div>
+      <div class="separation"></div>
     </div>
+    <section class="first">
+      <div>
+        <span>Enjoy on your TV</span>
+        <span
+>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray
+          players and more.</span
+        >  </div>
+        <div class="secimg">
+          <img
+            src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png"
+            alt=""
+          />
+          <video
+            src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v"
+            autoplay
+            loop
+            muted
+          ></video>
+        </div>
+    
+    </section>
   </body>
 </html>
